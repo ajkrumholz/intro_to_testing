@@ -2,12 +2,12 @@ class Student
 
     attr_reader :name, :cookies
 
-    def initialize(name, cookies = 0)
+    def initialize(name, cookies = nil)
         @name = name
         @cookies = cookies
     end
 
-    def add_cookies(num_cookies)
-        @cookies += num_cookies
+    def add_cookies(cookie)
+        @cookies << cookie
     end
 end
